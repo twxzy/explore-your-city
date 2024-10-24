@@ -85,7 +85,8 @@ body {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   border-right: none;
-  border-left: none;
+  border-left: 1px solid #ccc;
+  border-radius: 5px 0px 0px 5px;
   padding-left: 10px;
   font-size: 13px;
 }

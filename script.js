@@ -1,7 +1,7 @@
 
 
 // Inicializa o mapa dentro do elemento 'map' e centraliza em uma localização padrão
-var map = L.map('map').setView([0, 0], 2);
+var map = L.map('map').setView([-23.5489, -46.6388], 10);
 
 // Adiciona os tiles do OpenStreetMap ao mapa
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -22,7 +22,9 @@ function searchCity() {
                 if (data && data.length > 0) {
                     var lat = data[0].lat;
                     var lon = data[0].lon;
-                    map.setView([lat, lon], 13); // Centraliza o mapa na cidade encontrada
+                    map.setView([lat, lon], 12); // Centraliza o mapa na cidade encontrada
+
+                    document.getElementById('city-name')
 
                     // Remove a marcação anterior, se existir
                     if (currentMarker) {
@@ -45,4 +47,3 @@ function searchCity() {
         alert('Por favor, digite o nome da cidade.');
     }
 }
-
