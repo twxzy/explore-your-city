@@ -15,9 +15,14 @@ body {
 }
 
 .main-container {
-  width: 600px;
-  height: 500px;
-  border-radius: 20px;
+  width: 700px;
+}
+
+#map{
+  width: 100%;
+  height: 85%;
+  padding-top: 50px;
+  border: 1px solid #ccc;
 }
 
 .header {
@@ -25,6 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .header > h1 {
@@ -40,8 +46,6 @@ body {
 
 .input-container {
   display: flex;
-  margin-top: 30px;
-  border-radius: 10px 10px 0px 0px;
   height: 65px;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +107,6 @@ input::placeholder {
   width: 100%;
 }
 
-
 .form-element > button {
   font-size: 16px;
   border: 1px solid #ccc;
@@ -135,7 +138,14 @@ form select::-webkit-scrollbar {
   margin-top: 35px;
   padding: 15px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 380px;
+
 }
+
 
 .options-header {
   font-weight: 100;
@@ -148,6 +158,10 @@ form select::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 250px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 8px;
+
 }
 
 .password-length {

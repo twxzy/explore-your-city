@@ -8,10 +8,12 @@
 
     <!--BOOTSTRAP ICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
    <div class="main-container">
-     <!--Title-->
+         <!--Title-->
      <div class="header">
         <h1>Explore sua Cidade</h1>
         <p>Explore os dados sobre poluição e localização de sua cidade: longitude e latitude.</p>
@@ -54,12 +56,12 @@
         </div>
         <div class="form-element-search">
             <form class="form-text" action="form">
-                <input placeholder="Ex: Rio de Janeiro" type="text">
+                <input id="search-box" placeholder="Ex: Rio de Janeiro" type="text">
             </form>
         </div>
         <!--Button-->
         <div class="form-element">
-            <button><i style="color: black;" class="bi bi-search"></i></button>
+            <button onclick="searchCity()"><i style="color: black;" class="bi bi-search"></i></button>
         </div>
     </div>
     <!--Quality Indicator-->
@@ -72,25 +74,16 @@
             <h2 class="city-name">Rio de Janeiro - RJ</h2>
         </div>
         <!--Password Length-->
-        <div class="password-length">
-            <div class="length-input">
-                <!-- Inserir conteúdo aqui -->
-            </div>
-            <!--Checkbox Options-->
-            <div class="checkbox-options">
-                <div class="checkbox-element">
-                    <!-- Inserir conteúdo aqui -->
-                </div>
-                <div class="checkbox-element">
-                    <!-- Inserir conteúdo aqui -->
-                </div>
-                <div class="checkbox-element">
-                    <!-- Inserir conteúdo aqui -->
-                </div>
-            </div>
+        <div id="map">
+
         </div>
     </div>
+
    </div>
+   <!--MAP JS-->
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   
+   <!--JS VANILLA-->
    <script src="script.js"></script>
 </body>
 </html>
