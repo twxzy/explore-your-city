@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #212529;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@ body {
   height: 85%;
   border: 1px solid #ccc;
   margin-bottom: 5px;
+  border-radius: 6px;
 }
 
 .header {
@@ -30,10 +31,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 15px;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: 1px  solid #999;
+  border-radius: 15px 15px 0px 0px ;
 }
 
 .header > h1 {
+  color: white;
   margin-bottom: 20px;
   font-weight: 600;
   font-family: "Oswald", sans-serif;
@@ -49,8 +54,8 @@ body {
   height: 65px;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
   padding: 0px 20px;
+  border: 1px  solid #999;
 }
 
 .form-element > form > select {
@@ -112,7 +117,7 @@ input::placeholder {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 0px 5px 5px 0px;
-  background-color: #E7E7E7;
+  background-color: #999;
   color: white;
   cursor: pointer;
   padding-left: 22px;
@@ -128,30 +133,29 @@ form select::-webkit-scrollbar {
   font-size: 16px;
 }
 
-.quality-indicator {
-  height: 6px;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #E7E7E7;
-}
-
 .options-container {
-  background-color: white;
+  border: 1px solid #999;
   margin-top: 35px;
   padding: 15px;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 380px;
   padding: 15px 20px;
+  border-radius: 0px 0px 15px 15px ;
+}
+
+.nome-class{
+  width: 30px;
+  height: 30px;
 }
 
 
 .options-header {
   font-weight: 100;
   font-family: "Oswald", sans-serif;
-  padding-bottom: 13px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #dfdfdf;
 }
 
@@ -162,7 +166,7 @@ form select::-webkit-scrollbar {
   width: 250px;
   border-bottom: 1px solid #999;
   padding-bottom: 8px;
-
+  color: white;
 }
 
 .password-length {

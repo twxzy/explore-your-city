@@ -8,15 +8,20 @@
 
     <!--BOOTSTRAP ICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    
+    <!--MAPS JS-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!--TYPEWRITE JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@latest/dist/core.js"></script>
+
 </head>
 <body>
    <div class="main-container">
          <!--Title-->
      <div class="header">
         <h1>Procure sua Cidade</h1>
-        <p>Encontre o Mapa de Qualquer Cidade pelo Nome</p>
+        <p id="typewriter"></p>
     </div>
     <!--Input Container-->
     <div class="input-container">
@@ -26,14 +31,11 @@
                 <input id="search-box" placeholder="Ex: São Paulo" type="text">
             </form>
         </div>
+
         <!--Button-->
         <div class="form-element">
             <button onclick="searchCity()"><i style="color: black;" class="bi bi-search"></i></button>
         </div>
-    </div>
-    <!--Quality Indicator-->
-    <div class="quality-indicator">
-        <div class="indicator-bar"></div>
     </div>
     <!--Options-->
     <div class="options-container">
@@ -52,5 +54,20 @@
    
    <!--JS VANILLA-->
    <script src="script.js"></script>
+
+   <script>
+    const targetElement = document.getElementById("typewriter");
+  
+    const typewriter = new Typewriter(targetElement, {
+      loop: true, // Define para repetir continuamente
+      delay: 75,  // Ajusta o tempo de digitação (em milissegundos)
+    });
+  
+    typewriter
+      .typeString("Encontre o Mapa de Qualquer Cidade pelo Nome")
+      .pauseFor(1500) // Pausa para exibir o texto antes de apagar
+      .deleteAll()    // Apaga o texto inteiro
+      .start();
+  </script>
 </body>
 </html>
